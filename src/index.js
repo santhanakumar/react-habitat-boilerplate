@@ -1,4 +1,5 @@
 import ReactHabitat from 'react-habitat';
+import Button from "./components/Button";
 
 class MyApp extends ReactHabitat.Bootstrapper {
   constructor() {
@@ -8,7 +9,7 @@ class MyApp extends ReactHabitat.Bootstrapper {
     const builder = new ReactHabitat.ContainerBuilder();
 
     // Register a component:
-    builder.register(Btn).as('Btn');
+    builder.register(Button).as('Button');
 
     // Or register a component to load on demand asynchronously:
     // builder.registerAsync(() => System.import('./AnotherReactComponent')).as('AnotherReactComponent');
